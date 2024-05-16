@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset
+    text-decoratio
+    gap: 17px;n: none;="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothing & shoes</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<link rel="icon" href=
+"assets/images/logo.jpeg">
+  </head>
+  <body>
+      
+  <header class=" ">
+    <nav class="navbar flex ">
+      <div class="logo">
+        <a href="#"><span>&lt;\&gt;</span>Shopping.BK.com</a>
+      </div>
+      </div>
+      <div class="heading flex justify-center item-center"><h1>Home & kitchen appliances</h1>
+    </nav>
+    
+    <div class="span flex justify-center">
+      <span class=" flex pad img">catagaries<i class="fa-solid fa-filter"></i></span>
+    </div>
+    
+    <div class=" filter color flex justify-center gap img item-center">
+      <div class="dropdown ">
+        <div class="drop color gap1 "> 
+            <a href="#" class="color decoration">first cat</a>
+            <a href="#" class="color decoration">2nd cat</a>
+            <a href="#" class="color decoration">3rd cat</a>
+        
+        </div>
+      
+    </div>
+    </div>
+  </header>
+
+  <section class="flex">
+    <div id="container" class=" container left flex wrap gap img">
+      <!-- Dynamic boxes will be added here -->
+</div >
+  </section>
+  
+  
+  
+  
+  
+  <footer class="footer">
+    
+    <div class="about-me">
+      <h3>contact me !! if you have any question</h3>
+      <p>You can reach me via email or WhatsApp:</p>
+      <p>Email: bm625416gg@gmail.com</p>
+      <p>WhatsApp: +923329495366</p>
+    </div>
+
+    <p>&copy; 2024 shopping.BK.com || All rights reserved.</p>
+  </footer>
+
+
+  
+  
+  
+  <script src="home.js"></script>
+  <script> 
+
+
+ document.querySelectorAll('.item').forEach((item, index) => {
+  const productImage = item.querySelector('.productImage');
+  const prevBtn = item.querySelector('.prevBtn');
+  const nextBtn = item.querySelector('.nextBtn');
+
+  // Define different sets of image URLs
+  const imageSets = [
+      [
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg"
+      ],
+      [
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg"
+      ],
+      [
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg",
+          "assets/images/home.jpeg"
+      ],
+      [
+          "assets/images/books.jpeg",
+          "assets/images/books.jpeg",
+          "assets/images/sports.jpeg"
+      ],
+      // Add more sets as needed
+  ];
+
+  // Check if image URLs are defined for this box
+  if (index < imageSets.length && imageSets[index].length > 0) {
+      let currentImageIndex = 0;
+
+      // Function to update the image source
+      function updateImage() {
+          productImage.src = imageSets[index][currentImageIndex];
+      }
+
+      // Event listener for the previous button
+      prevBtn.addEventListener('click', () => {
+          currentImageIndex = (currentImageIndex - 1 + imageSets[index].length) % imageSets[index].length;
+          updateImage();
+      });
+
+      // Event listener for the next button
+      nextBtn.addEventListener('click', () => {
+          currentImageIndex = (currentImageIndex + 1) % imageSets[index].length;
+          updateImage();
+      });
+
+      // Initial update
+      updateImage();
+  }
+});
+
+
+
+
+    
+</script>
+</body>
+</html>

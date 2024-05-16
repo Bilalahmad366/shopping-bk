@@ -1,0 +1,226 @@
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #484541;
+    overflow-x: hidden;
+
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .logo a {
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+  box-shadow: 1px 3px #8b5d4d;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .logo a:hover {
+  box-shadow: 2px 5px #573c33;
+  }
+  .logo span {
+    color: #ff7f50;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .nav-links li {
+    margin-right: 20px;
+  }
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 1px 3px #8b5d4d;
+  }
+  .nav-links a:hover {
+    color: #ff7f50; 
+  box-shadow: 2px 5px #573c33;
+  }
+  .welcome-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .welcome-section h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 900;
+  }
+  .welcome-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .line{
+    border: 1px solid rgb(108, 107, 107);
+    width: 50vw;
+    margin: auto;
+    box-shadow: rgba(121, 121, 167, 0.2) 0px 10px 90px 0px;
+  
+  }
+  .cat-heading {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    color: #fff;
+    gap: 12px;
+    text-transform: uppercase;
+  }
+  .cat-heading h1 {
+    border-radius: 30%;
+    padding: 15px;
+    box-shadow: rgba(178, 178, 232, 0.2) 0px 10px 40px 0px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .h1{
+    border:.5px solid  #777775;
+    width: 20vw;
+  }
+.catagaries{
+  display: flex;
+  gap: 25px;
+  margin: 30px;
+}
+.catagaries a {
+color: #f8eded;
+text-decoration: none;
+text-transform: capitalize;
+}
+.catagaries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+}
+.span{
+  background-color: #8a9292;;
+  border-radius: 8px;
+  padding: 5px;
+}
+.box {
+  color: #fff;
+  font-weight: bold;
+  flex-direction: column;
+  gap: 5px;
+  font-size: larger;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 45vh;
+  width: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box:hover{
+  box-shadow: rgba(178, 178, 232, 0.2) 0px 10px 40px 0px;
+}
+button{
+cursor: pointer;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      background-color: #7e9999;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 18px;
+}
+button:hover{
+      background-color: #235b5b;
+}
+.fashion{
+  background-image:url(assets/images/fashion.jpeg);
+}
+.books{
+  background-image: url(assets/images/books.jpeg);
+}
+.home{
+  background-image: url(assets/images/home.jpeg);
+}
+.beauty{
+  background-image: url(assets/images/beauty.jpeg);
+}
+.book{
+  background-image: url(assets/images/books.jpeg);
+}
+.toys{
+  background-image: url(assets/images/toys.jpeg);
+}
+.sports{
+  background-image: url(assets/images/sports.jpeg);
+}
+  .footer {
+    background-color: #232222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  @media screen and (max-width: 550px){
+  .navbar {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px;
+  }
+  .welcome-section h1 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .welcome-section p {
+    font-size: 10px;
+    margin-top: 8px;
+    line-height: 20px;
+  }
+  .cat-heading h1 {
+    font-size: larger;
+    font-weight: bolder;
+  }
+  .h1{
+    border:1px solid  #777775;
+    width: 10vw;
+  }
+  .span{
+    font-size: 12px;
+    background-color: #8a9292;
+    border-radius: 22px;
+    padding: 7px 15px;
+  }
+  button{
+        font-size: 8px;
+        font-weight: 500;
+        padding: 4px 12px;
+  }
+  .box {
+    height: 30vh;
+    width: 85vw;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  } 
